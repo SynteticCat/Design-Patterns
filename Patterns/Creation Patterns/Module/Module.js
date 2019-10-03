@@ -33,8 +33,8 @@ const Laptop = (function() {
   })();
   
   console.log(Laptop);
-  console.log(`Try to get "seconds" value = ${seconds}`);
-  console.log(`Gettting "seconds" value by API = ${Laptop.getSecondsOfWorking()}`);
+  // console.log(`Try to get "seconds" value = ${seconds}`); // Reference Error
+  console.log(`Getting "seconds" value by API = ${Laptop.getSecondsOfWorking()}`);
 
   Laptop.turnOn();  // turn on timer, private data changing every second
   setTimeout(() => console.log(`"seconds" value after 2 seconds = ${Laptop.getSecondsOfWorking()}`), 2000);

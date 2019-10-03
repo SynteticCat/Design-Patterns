@@ -9,7 +9,7 @@
  */
 
 // Native JS (creation, define properties, inheritance)
-const createObj = val => {
+function createObj (val) {
     this.val = val;
 };
 const obj1 = { val: 1 };
@@ -46,7 +46,7 @@ class Car {
     }
 }
 
-class Tesla {
+class Tesla extends Car {
     constructor(model, chargetime) {
         super('Tesla', model);
         this.chargetime = chargetime;
@@ -58,7 +58,7 @@ class Tesla {
 }
 
 const car = new Car('Tesla', '3');
-const tesla = new Car('2', 20);
+const tesla = new Tesla('2', 20);
 
 car.drive();
 tesla.drive();
