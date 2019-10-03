@@ -4,10 +4,11 @@
  * associated with the clogging of the global scope and intentional
  * or not intentionally changing data that is considered NOT publicly available.
  * 
- * P.S: this pattern is implemented “out of the box” in JS using "JS Modules"
+ * This pattern is implemented “out of the box” in ES6 using "JS Modules"
+ * P.S.: Own example and description
  */
 
-// Own example and description (see higher)
+// Native JS (create, export module API by closures)
 const Laptop = (function() {
     let seconds = 0;
     let timerID;
